@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JW Clothing - Lookbook</title>
+  <link rel="stylesheet" href="style.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+ 
+
+/* Lookbook section */
+.lookbook-section {
+  padding: 80px 60px;
+  background-color: #fefcf9;
+}
+
+.row,
+.content-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 70px;
+}
+
+.text-block,
+.text-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.text-block h2,
+.text-content h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.text-block p,
+.text-content p {
+  font-size: 17px;
+  color: #3a3a3a;
+  font-weight: bolder;
+}
+
+/* Image Styling */
+.row img,
+.image-content img {
+  width: 350px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.row img:hover,
+.image-content img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .row,
+  .content-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .row img,
+  .image-content img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .lookbook-section {
+    padding: 50px 20px;
+  }
+
+  .text-block,
+  .text-content {
+    max-width: 100%;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">JW CLOTHING</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Look Book.html" class="active">Lookbook</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="lookbook-section">
+      <!-- Section 1 -->
+      <div class="row">
+        <img src="images.jpeg" alt="Winter Style">
+        <div class="text-block">
+          <h2>JW Style in Motion</h2>
+          <p>
+            Every piece from JW Clothing is more than just fabric – it’s a story. From bold streetwear looks to minimal
+            everyday fits, our collections are designed to move with you. Explore signature styles that speak confidence
+            and individuality.
+          </p>
+        </div>
+      </div>
+
+      <!-- Section 2 -->
+      <div class="content-row">
+        <div class="text-content">
+          <h2>JW Styled for Every Season</h2>
+          <p>
+            Whether it's a chill morning or a night out with friends, JW Clothing brings effortless fashion
+            to every moment. Our lookbook features seasonal essentials and versatile pieces made to mix,
+            match, and stand out – your wardrobe, your way.
+          </p>
+        </div>
+
+        <div class="image-content">
+          <img src="images (1).jpeg" alt="Minimal Look">
+        </div>
+      </div>
+    </section>
+  </main>
+   <footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <h2>JW Clothing</h2>
+      <p>Timeless fashion. Bold expression. Designed to move with you, season after season.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Look Book.html">lookbook</a></li>
+        <li><a href="shop.html">shop</a></li>
+        <li><a href="Contact.html">contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 JW Clothing. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+
+</html>

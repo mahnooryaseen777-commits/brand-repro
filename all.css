@@ -1,0 +1,133 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    font-style: italic;
+
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    background-color:rgb(39, 6, 56);
+    color: white;;
+    color: white;
+    padding: 20px 30px;
+    box-shadow: 0 4px 8px rgba(13, 40, 88, 0.1);
+    font-style: italic;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
+
+.info h1 {
+    font-size: 26px;
+    margin-bottom: 5px;
+    font-style: italic;
+}
+
+.info p {
+    font-size: 15px;
+    color: #d6e0f0;
+}
+
+/* Section Styling */
+main {
+    flex: 1;
+    padding: 30px;
+}
+
+.section-title {
+    font-size: 34px;
+    margin-bottom: 30px;
+    color:rgb(39, 6, 56);
+    border-left: 5px solid rgb(69, 8, 99);
+    padding-left: 30px;
+}
+
+/* File Row Layout */
+.file-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: flex-start;
+}
+
+/* File Card/Box */
+.file-box {
+    background-color: rgb(39, 6, 56);
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgb(39, 6, 56);
+    padding: 20px;
+    width: 260px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    border-top: 5px solid  purple;
+}
+
+.file-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    background-color: rgb(165, 126, 160);
+}
+
+.file-box img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.file-box h3 {
+    margin-bottom: 10px;
+    color:white;
+    font-size: 18px;
+}
+
+.file-box p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* Link Button */
+.file-box a {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color:white;
+    color: rgb(39, 6, 56);
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.file-box a:hover {
+    background-color:rgb(12, 12, 66);
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(39, 6, 56);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
